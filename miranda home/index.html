@@ -2,125 +2,85 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <title>Eletricista Profissional | Contato</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato de eletrecista| Landing Page</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
+<header class="navbar">
     <nav>
-        <a href="#s1">Home</a>
-        <a href="#s2">Fotos</a>
-        <a href="#s3">Vídeo</a>
-        <a href="#s4">Contato</a>
+        <a href="#home">Contato</a>
+        <a href="#fotos">Fotos</a>
+        <a href="#video">Vídeo</a>
+        <a href="#agendamento">Agendamento</a>
     </nav>
 </header>
 
 <main>
 
-    <!-- HERO / HOME -->
-    <section id="s1" class="hero">
-        <div class="left">
-            <!-- Espaço reservado para imagem ou slider futuramente -->
-        </div>
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Serviços Elétricos Profissionais</h1>
+        <p>Qualidade, segurança e rapidez para melhorar o seu dia.</p>
 
-        <div class="right">
-            <h1>O nosso serviço pra melhorar o seu dia.<br> contate nos para podemos ajudar.</h1>
-          
-        </div>
-    </section>
+        <form class="contact-form">
+            <h2>Contato rápido</h2>
 
-   <!-- FOTOS / SLIDER -->
-<section id="s2" class="slider-section">
-    <header>
-        <h2>Fotos</h2>
-        <p>
-            Nesta seção você pode exibir imagens relacionadas ao tema,
-            utilizando um slide automático para dar mais dinamismo.
-        </p>
-    </header>
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
 
-    <div class="slider">
-        <img class="slide active"
-             src="https://www.bing.com/images/search?view=detailV2&ccid=0atdEBtW&id=D549ABD2984468A7E155D29B6C13FC2A571E965D&thid=OIP.0atdEBtWeJ6YQ-6w0SpH8wHaGk&mediaurl=https%3a%2f%2f2.bp.blogspot.com%2f-1k3FBNJo3vw%2fWqGGezDvvKI%2fAAAAAAAAIvE%2fDkkVapQcHcIAmFcuQsRelifRtAUoLq8fQCLcBGAs%2fs1600%2fcapaartigo.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.d1ab5d101b56789e9843eeb0d12a47f3%3frik%3dXZYeVyr8E2yb0g%26pid%3dImgRaw%26r%3d0&exph=1414&expw=1594&q=eletrica&FORM=IRPRST&ck=D97090705D34EB571C5F8907B90CD26B&selectedIndex=8&itb=0"
-             alt="Eletricidade 1">
-        <img class="slide"
-             src="https://www.bing.com/images/search?view=detailV2&ccid=ABsfwvy1&id=7C3486E6BF8FD49D1503B406AC88083B16FC61EF&thid=OIP.ABsfwvy1TOImixyqfcJxAwHaFn&mediaurl=https%3a%2f%2fwww.epengenharia.com%2fwp-content%2fuploads%2fInstalacao-eletrica.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.001b1fc2fcb54ce2268b1caa7dc27103%3frik%3d72H8FjsIiKwGtA%26pid%3dImgRaw%26r%3d0&exph=505&expw=666&q=eletrica&FORM=IRPRST&ck=1246842D75201A22B5A810F329CAEB38&selectedIndex=10&itb=0"
-             alt="Eletricidade 2">
-        <img class="slide"
-             src="https://www.bing.com/images/search?q=Corte+De+Energia+Eletrica&FORM=IRTRRL"
-             alt="Eletricidade 3">
+            <button type="submit">Enviar</button>
+        </form>
     </div>
 </section>
-<section id="s3" class="video">
-    <div class="video-box">
-        <h2>Vídeo</h2>
-        <p>
-            Este vídeo explica o que a gente faz no nosso trabalho,
-            mostrando como funcionam nossos serviços e processos.
-        </p>
-    </div>
 
-    <iframe
-        src="https://www.youtube.com/embed/yKs_Bh6PP-4"
-        title="YouTube video player"
-        frameborder="0"
-        allowfullscreen>
-    </iframe>
+<!-- FOTOS -->
+<section id="fotos" class="gallery">
+    <h2>Nosso Trabalho</h2>
+    <div class="images">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkNbI_n6PWD4gGZU1S7X1OcNBTsTy-tdpbTA&s.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXmCHKFvt0FdnoDdmmulfmDe71Q6gpnS91sw&s.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZkuonbiDmlYuynY9MWIk_PXF2ViNsGtMlYw&s.jpg">
+    </div>
 </section>
 
+<!-- VIDEO -->
+<section id="video" class="video-section">
+    <div class="video-text">
+        <h2>Como Trabalhamos</h2>
+        <p>Veja como realizamos nossos serviços com segurança e eficiência.</p>
+    </div>
 
-    <section id="s4">
+    <iframe src="https://www.youtube.com/embed/yKs_Bh6PP-4" allowfullscreen></iframe>
+</section>
 
-         <div class="text-box">
-    <form id="contactForm">
-        <h2>Contato</h2>
+<!-- AGENDAMENTO -->
+<section id="agendamento" class="schedule">
+    <h2>Agende um Horário</h2>
 
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" placeholder="Digite seu nome" required>
-
-        <label for="mensagem">Mensagem</label>
-        <textarea id="mensagem" placeholder="Digite sua mensagem" required></textarea>
-
-        <button type="submit">Enviar</button>
+    <form>
+        <input type="date" required>
+        <input type="time" required>
+        <button type="submit">Agendar</button>
     </form>
-    </section>
-
-
-            </p>
-        </div>
-    </section>
+</section>
 
 </main>
 
 <footer>
-    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-        <i class="fa-brands fa-facebook"></i>
-    </a>
-    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-        <i class="fa-brands fa-instagram"></i>
-    </a>
-    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
-        <i class="fa-brands fa-linkedin"></i>
-    </a>
-    <a href="https://github.com/Henriqueheld" target="_blank" aria-label="GitHub">
-        <i class="fa-brands fa-github"></i>
-    </a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fab fa-github"></i></a>
 </footer>
-
-<script src="script.js"></script>
 
 </body>
 </html>
