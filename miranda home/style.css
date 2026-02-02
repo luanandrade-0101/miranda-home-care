@@ -16,7 +16,7 @@ body {
     color: var(--light);
 }
 
-/* NAVBAR */
+
 .navbar {
     position: fixed;
     top: 0;
@@ -44,7 +44,7 @@ body {
     color: var(--primary);
 }
 
-/* HERO */
+
 .hero {
     min-height: 100vh;
     background: url("Captura de tela 2026-01-30 160032.png") center/cover no-repeat;
@@ -67,7 +67,6 @@ body {
     margin-bottom: 15px;
 }
 
-/* FORM */
 .contact-form {
     margin-top: 25px;
     display: flex;
@@ -92,7 +91,7 @@ button {
     font-weight: bold;
 }
 
-/* GALERIA */
+
 .gallery {
     padding: 80px 20px;
     text-align: center;
@@ -112,7 +111,7 @@ button {
     border-radius: 10px;
 }
 
-/* VIDEO */
+
 .video-section {
     padding: 80px 20px;
     display: flex;
@@ -129,7 +128,7 @@ iframe {
     border: none;
 }
 
-/* AGENDAMENTO */
+
 .schedule {
     padding: 80px 20px;
     text-align: center;
@@ -143,7 +142,7 @@ iframe {
     gap: 10px;
 }
 
-/* FOOTER */
+
 footer {
     background: black;
     height: 80px;
@@ -162,7 +161,7 @@ footer i:hover {
     transform: scale(1.2);
 }
 
-/* RESPONSIVO */
+
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 28px;
