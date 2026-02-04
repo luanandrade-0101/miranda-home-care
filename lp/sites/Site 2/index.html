@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eletricista Profissional | Contato</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <nav>
+            <a href="#home">Contato</a>
+            <a href="#fotos">Fotos</a>
+            <a href="#video">Vídeo</a>
+            <a href="#agendamento">Agendamento</a>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Serviços Elétricos Profissionais</h1>
+                <p>Qualidade, segurança e rapidez para melhorar o seu dia.</p>
+
+             <form class="contact-form" id="whatsappForm">
+    <h2>Contato rápido</h2>
+
+    <input type="text" id="nome" placeholder="Seu nome" required>
+    <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
+
+    <button type="submit">Enviar</button>
+</form>
+<script>
+document.getElementById("whatsappForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const nome = document.getElementById("nome").value;
+    const mensagem = document.getElementById("mensagem").value;
+
+    const telefone = "5599999999999";
+
+    const texto = `Olá, me chamo ${nome}. ${mensagem}`;
+    const textoCodificado = encodeURIComponent(texto);
+
+    const url = `https://wa.me/${telefone}?text=${textoCodificado}`;
+
+    window.open(url, "_blank");
+});
+</script>
+
+
+            </div>
+        </section>
+<section id="fotos" class="gallery">
+    <h2>Nosso Trabalho</h2>
+    <div class="images">
+        
+        <div class="img-box">
+            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758">
+        </div>
+
+        <div class="text-box">
+            <h3>Excelência em Serviços Elétricos</h3>
+            <p>
+                Trabalhamos com instalações, manutenções e reparos elétricos,
+                sempre priorizando a segurança, qualidade e normas técnicas.
+                Atendemos residências, comércios e empresas com agilidade
+                e profissionalismo.
+            </p>
+        </div>
+
+        <div class="img-box">
+            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e">
+        </div>
+
+    </div>
+</section>
+
+
+
+        <section id="video" class="video-section">
+            <div class="video-text">
+                <h2>Como Trabalhamos</h2>
+                <p>Veja como realizamos nossos serviços com segurança e eficiência.</p>
+            </div>
+
+            <iframe src="https://www.youtube.com/embed/yKs_Bh6PP-4" allowfullscreen></iframe>
+        </section>
+
+
+        <section id="agendamento" class="schedule">
+            <h2>Agende um Horário</h2>
+
+            <form>
+                <input type="date" required>
+                <input type="time" required>
+                <button type="submit">Agendar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+    <i class="fa-brands fa-facebook"></i>
+    </a>
+    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="https://whatsapp.com" target="_blank" aria-label="whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="https://github.com/Henriqueheld" target="_blank" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+    </footer>
+
+</body>
+
+</html>
